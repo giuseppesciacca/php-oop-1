@@ -1,36 +1,15 @@
 <?php
+include __DIR__ . '/Models/Movie.php';
 
-/* classe ‘Movie’
-all'interno della classe sono dichiarate delle variabili d'istanza
-all'interno della classe è definito un costruttore
-all'interno della classe è definito almeno un metodo */
-class Movie
-{
-    public $title;
-    public $overview;
-    public $genre;
+/* 
+Bonus 1:
+Creare un layout completo per stampare a schermo una lista di movies.
+Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi file e cartelle.
 
-    function __construct(string $title, string $overview, Genre $genre)
-    {
-        $this->title = $title;
-        $this->overview = $overview;
-        $this->genre = $genre;
-    }
-
-    function get_genre()
-    {
-        return $this->genre;
-    }
-}
-class Genre
-{
-    public $genre;
-
-    function __construct(string $genre)
-    {
-        $this->genre = $genre;
-    }
-}
+Possiamo ad esempio organizzare il codice:
+creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php
+organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
+*/
 
 $avatar = new Movie('Avatar', 'Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l\'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na\'vi che possono essere \'guidati\' dagli umani.', new Genre('Action'));
 
