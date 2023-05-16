@@ -16,6 +16,11 @@ class Movie
         $this->overview = $overview;
         $this->genre = $genre;
     }
+
+    function get_genre()
+    {
+        return $this->genre;
+    }
 }
 class Genre
 {
@@ -30,6 +35,7 @@ class Genre
 $avatar = new Movie('Avatar', 'Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l\'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na\'vi che possono essere \'guidati\' dagli umani.', new Genre('Action'));
 
 var_dump($avatar);
+var_dump($avatar->get_genre());
 
 $titanic = new Movie('Avatar', 'A Clerville c\'è attesa per l\'arrivo di Lady Kant, che porta con sé un diamante rosa. Il gioiello non sfugge all\'attenzione di Diabolik, che rimane incantato dalla donna. Ma l\'ispettore Ginko ha trovato il modo di intrappolare il criminale.', new Genre('Crime'));
 
