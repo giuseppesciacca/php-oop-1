@@ -1,8 +1,8 @@
 <?php
-include __DIR__ . './Models/Movie.php';
+include __DIR__ . '/Models/Movie.php';
 
 $movies = [
-    "avatar" => new Movie('Avatar', 'Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l\'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na\'vi che possono essere \'guidati\' dagli umani.', 'https://image.tmdb.org/t/p/w342/b1UAG3QykMoLxwDgzk1LqsBkkG3.jpg', new Genre('Action')),
+    "avatar" => new Movie('Avatar', 'Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l\'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na\'vi che possono essere \'guidati\' dagli umani.', 'https://image.tmdb.org/t/p/w342/b1UAG3QykMoLxwDgzk1LqsBkkG3.jpg', new Genre('Action', 'Adventure')),
 
     "diabolik" => new Movie('Diabolik', 'A Clerville c\'è attesa per l\'arrivo di Lady Kant, che porta con sé un diamante rosa. Il gioiello non sfugge all\'attenzione di Diabolik, che rimane incantato dalla donna. Ma l\'ispettore Ginko ha trovato il modo di intrappolare il criminale.', 'https://image.tmdb.org/t/p/w342/ylvBK32qTiP9H07yssYR1zXSojq.jpg', new Genre('Crime')),
 
